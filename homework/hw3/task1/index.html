@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task1</title>
+    <style>
+        *{
+margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial sans-serif;
+        }
+        main{
+            padding: 10px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .widgets{
+            width: 100%;
+            height: 25vh;
+            background-color: #5c6bf3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .items{
+            display: flex;
+            width: 100%;
+           height: 20vh;
+            justify-content: space-between;
+            gap: 20px;
+
+        }
+        .item{
+            width: 33.3%;
+            background-color: #12335b;
+
+        }
+        .contact{
+            height: 50%;
+            background-color: #5c6bf3;
+        }
+        .widgets, .item, .contact{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div class="widgets">Widgets</div>
+    <div class="items">
+        <div class="item">Big Widgets</div>
+        <div class="item">Bigger Widgers</div>
+        <div class="item">Huge Widgets</div>
+    </div>
+    <div class="contact">Contact</div>
+</main>
+</body>
+</html>
