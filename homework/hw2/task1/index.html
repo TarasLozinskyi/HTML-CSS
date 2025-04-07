@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+
+        }
+
+        .item {
+            width: 250px;
+            height: 200px;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            border: 3px solid lightgray;
+            border-radius:20px;
+        }
+
+        .item img {
+            width: 100%;
+            height: 60%;
+            object-fit: contain;
+
+        }
+        p{
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            padding-top: 20px;
+        }
+
+
+        span{
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>What do I have in my fridge?</h1>
+
+<div class="flex-container">
+    <div class="item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Hot_chili_red_pepper_icon_emote.png/1024px-Hot_chili_red_pepper_icon_emote.png"
+             alt="pepper">
+        <p>Pepper</p>
+    </div>
+    <div class="item">
+        <img src="https://png.pngtree.com/png-vector/20231017/ourmid/pngtree-fresh-apple-fruit-red-png-image_10203073.png" alt="apple">
+        <p>Apple</p>
+    </div>
+    <div class="item">
+        <img src="https://pngimg.com/d/cheese_PNG25295.png" alt="cheese">
+        <p>Cheese</p>
+    </div>
+    <div class="item">
+        <img src="https://static.vecteezy.com/system/resources/previews/009/887/201/non_2x/sweet-corn-free-png.png" alt="corn">
+        <p>Corn</p>
+    </div>
+    <div class="item">
+        <img src="https://pngfre.com/wp-content/uploads/mushroom-poster.png" alt="mushroom">
+        <p>Mushroom</p>
+    </div>
+    <div class="item">
+        <img src="https://pngfre.com/wp-content/uploads/Garlic-20.png" alt="Garlic">
+        <p>Garlic</p>
+    </div>
+    <div class="item">
+        <img src="https://png.pngtree.com/png-vector/20240413/ourmid/pngtree-a-piece-of-meat-that-is-cut-in-half-png-image_11955762.png" alt="beef">
+        <p>Beef</p>
+    </div>
+    <div class="item">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/024/508/741/small/tropical-fish-isolated-on-background-with-generative-ai-png.png"
+             alt="fish">
+        <p>Fish</p>
+    </div>
+    <div class="item">
+        <img src="https://pngimg.com/d/egg_PNG5.png" alt="eggs">
+        <p>Eggs</p>
+    </div>
+    <div class="item">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/021/703/601/small_2x/high-definition-of-fresh-green-coriander-leaf-isolated-on-transparent-background-salad-leaf-file-png.png"
+             alt="coriander">
+        <p>Coriander</p>
+    </div>
+</div>
+
+<span>... that's all ...</span>
+
+
+</body>
+</html>
