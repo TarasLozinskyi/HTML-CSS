@@ -2,49 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>page2</title>
-
+    <title>page3</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        body{
+
+        body {
             height: 100vh;
         }
-        .header, .footer{
+
+        .header, .footer {
             height: 22%;
             background: #D9D9D9;
         }
-        .main{
+
+        .main {
             height: 56%;
-         display: flex;
+            display: flex;
         }
 
-        .item-one, .item-three{
+        .item-one, .item-three {
             height: 100%;
             width: 27%;
             background: #C0BDBD;
         }
-        .item-two{
+
+        .item-two {
             height: 100%;
             width: 46%;
-            background: #A4A4A4;
+            display: flex;
+            flex-direction: column;
         }
+
+        .item_two-top, .item_two-bottom {
+            height: 50%;
+        }
+
+        .item_two-top {
+            background: #827878;
+
+        }
+
+        .item_two-bottom {
+            background: #B7ADAD;
+        }
+
 
     </style>
 </head>
 <body>
-
 <header class="header"></header>
 <main class="main">
     <div class="item-one"></div>
-    <div class="item-two"></div>
+    <div class="item-two">
+        <div class="item_two-top">
+
+        </div>
+        <div class="item_two-bottom">
+
+        </div>
+    </div>
     <div class="item-three"></div>
 </main>
 <footer class="footer"></footer>
-
-
 </body>
 </html>
