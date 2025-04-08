@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task2</title>
+    <style>
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      body{
+          font-family: sans-serif;
+          height: 100vh;
+          background-color: #139ea4;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .form__container{
+          border-radius: 10px;
+
+        width: 600px;
+        height: 300px;
+          background-color: #fff;
+      }
+
+      .form__header{
+border-radius: 10px 10px 0 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          padding: 30px 100px 30px 100px;
+          background-color: #bfe3f6;
+      }
+
+      input[type="text"]{
+          display: block;
+          width: 100%;
+          height: 40px;
+          margin:20px 0;
+      }
+
+      input[type="text"]:focus{
+         outline: none;
+      }
+      input[type="password"]{
+          display: block;
+          width: 100%;
+          height: 40px;
+          margin:0px 0 20px 0;
+      }
+
+      input[type="password"]:focus{
+          outline: none;
+      }
+      form{
+          padding: 0 100px 30px 100px;
+      }
+
+      form div{
+          display: flex;
+          justify-content: space-between;
+      }
+      input[type="submit"]{
+          padding: 5px 30px;
+          border-radius: 3px;
+          border:1px solid black;
+          background-color: #bfe3f6;
+
+      }
+      input[type="submit"]:focus{
+          outline: none;
+
+      }
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="form__container">
+   <div class="form__header">
+       <h1>Вхід в особистий кабінет</h1>
+   </div>
+    <form >
+        <input  type="text" name="login" placeholder="Логін або email" required>
+        <input  type="password" name="password" placeholder="Password" required>
+        <div>
+            <label for="forget-me">
+                Запам'ятати мене
+                <input type="checkbox" name="forget-me" id="forget-me" required>
+            </label>
+            <input type="submit" value="Вхід">
+    </form>
+        </div>
+</div>
+
+</body>
+</html>
