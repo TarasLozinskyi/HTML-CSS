@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>page4</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            height: 100vh;
+            font-size: 25px;
+        }
+
+        .header, .footer {
+            height: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .header{
+            background: #8D8484;
+        }
+        .footer{
+            background: #BDBDBD;
+        }
+        .main{
+            height: 60%;
+            color: white;
+            display: flex;
+
+        }
+        .item_left{
+            height: 100%;
+            width: 72%;
+        }
+        .item_right{
+            height: 100%;
+            width: 28%;
+        }
+        .item_left-one, .item_left-two, .item_left-three, .item_right-one, .item_right-two{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item_left-one{
+            background: #776969;
+            height: 33.3%;
+        }
+        .item_left-two{
+            background: #643030;
+            height: 33.3%;
+        }
+        .item_left-three{
+            background: #441818;
+            height: 33.3%;
+        }
+        .item_right-one{
+            height: 50%;
+            background: #937575;
+        }
+        .item_right-two{
+            height: 50%;
+            background: #644C4C;
+        }
+
+    </style>
+</head>
+<body>
+<header class="header">header</header>
+<main class="main">
+    <div class="item_left">
+        <div class="item_left-one">Content - 1</div>
+        <div class="item_left-two">Content - 2</div>
+        <div class="item_left-three">Content - 3</div>
+    </div>
+    <div class="item_right">
+        <div class="item_right-one">spam -1</div>
+        <div class="item_right-two">spam -2 </div>
+    </div>
+
+</main>
+<footer class="footer">footer</footer>
+</body>
+</html>
