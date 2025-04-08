@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /*height: 100vh;*/
+    padding: 50px 0;
+}
+
+.instagram__container {
+    width: 400px;
+    height: 550px;
+    border: 1px solid rgba(166, 157, 157, 0.34);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.instagram__container img {
+    width: 80%;
+
+    object-fit: cover;
+}
+
+
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type='text'] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(166, 157, 157, 0.34);
+    padding: 0 5px;
+}
+
+input[type='text']:focus {
+    outline: none;
+}
+
+input[type='password'] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(166, 157, 157, 0.34);
+    padding: 0 5px;
+}
+
+input[type='password']:focus {
+    outline: none;
+}
+
+input[type='submit'] {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: cornflowerblue;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.instagram__container span {
+    text-transform: uppercase;
+    color: gray;
+    padding: 20px 0;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.facebook{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook__link {
+    font-weight: bold;
+    color: #0f2782;
+    text-decoration: none;
+
+}
+.facebook svg{
+    margin-right: 5px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+
+
+.forgot-password {
+
+    padding: 20px 0;
+    font-size: 14px;
+    color: #0f2782;
+    text-decoration: none;
+
+}
+
+.instagram__footer {
+    width: 400px;
+    height: 100px;
+    border: 1px solid rgba(166, 157, 157, 0.34);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram__footer a {
+    text-decoration: none;
+   font-weight: bold;
+    color: #11ade4;
+}
+
+
+
+
+
