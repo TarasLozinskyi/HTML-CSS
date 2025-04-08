@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>preloader1</title>
+  <style>
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      body{
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          height: 100vh;
+      }
+      h2{
+          color:black;
+          padding: 30px 0;
+      }
+      .preloader_one{
+          width: 500px;
+          height: 50px;
+          border:1px solid black;
+          border-radius: 25px;
+      }
+      .box{
+          background: black;
+          height: 100%;
+          width: 50px;
+          border-radius: 25px;
+          animation: movement 3s ease-in-out infinite alternate;
+      }
+      
+      @keyframes movement {
+          0%{
+              transform: translateX(0);
+
+          }
+          100%{
+              transform: translateX(450px);
+          }
+
+      }
+
+      .preloader_two{
+          width: 300px;
+          height: 300px;
+          /*border:1px solid lightcoral;*/
+          border-radius: 25px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+      }
+
+      .item{
+          width: 50px ;
+          height: 50px;
+          border-radius: 50%;
+          background: black;
+
+      }
+      .item1{
+animation: fluctuation 2s ease-in-out infinite alternate ;
+      }
+      .item2{
+          animation: fluctuation 2.1s ease-in-out infinite alternate;
+      }
+      .item3{
+          animation: fluctuation 2.2s ease-in-out infinite alternate;
+      }
+
+      @keyframes fluctuation1 {
+          0%{
+              transform: translateY(10px);
+
+          }
+          50%{
+              transform: translateY(-10px);
+          }
+
+          100%{
+              transform: translateY(10px);
+          }
+
+      }
+      @keyframes fluctuation {
+          0%{
+              transform: translateY(50px);
+
+          }
+          50%{
+              transform: translateY(-50px);
+          }
+
+          100%{
+              transform: translateY(50px);
+          }
+
+      }
+
+  </style>
+</head>
+<body>
+<h2>Preloader 1</h2>
+<div class="preloader_one">
+    <div class="box"></div>
+</div>
+<h2>Preloader 2</h2>
+<div class="preloader_two">
+    <div class="item item1"></div>
+    <div class="item item2"></div>
+    <div class="item item3"></div>
+</div>
+
+</body>
+</html>
